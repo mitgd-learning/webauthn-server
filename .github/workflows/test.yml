@@ -15,6 +15,7 @@ jobs:
                 include:
                     - php: 8.0
                       stability: ignore-platform-req=php
+                      experimental: true
         name: Test php ${{ matrix.php }} ${{ matrix.stability }}
         steps:
             - name: Checkout code
